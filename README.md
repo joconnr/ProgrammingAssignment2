@@ -1,3 +1,27 @@
+
+
+
+## To test my cachematrix.r
+
+source("cachematrix.r")
+
+## To Check Caching
+
+x <- makeCacheMatrix(matrix(nrow=2, ncol=2, c(1,2,3,4)))
+y <- cacheSolve(x)
+y <- cacheSolve(x)
+y
+
+## To Test Change of Original Matrix
+
+x <- makeCacheMatrix(matrix(nrow=2, ncol=2, c(5,6,7,8)))
+y
+
+
+
+
+
+
 ### Introduction
 
 This second programming assignment will require you to write an R
