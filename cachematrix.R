@@ -3,8 +3,8 @@ cacheArea = new.env(hash=TRUE)
 
 ## Create a Matrix that Can Cache its Inverse
 makeCacheMatrix <- function(x = matrix(nrow=2, ncol=2, 1:4)) { 
-	m <- NULL
-	## Load the set/get and inversing functions
+      m <- NULL
+      ## Load the set/get and inversing functions
       set <- function(y) {
             x <<- y
             m <<- NULL
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix(nrow=2, ncol=2, 1:4)) {
       getinverse <- function() {
 		m <- cacheArea$m
 		m  
-	}
+      }
 	vec <- list(set = set, get = get,
              setinverse = setinverse,
              getinverse = getinverse)
